@@ -1,0 +1,60 @@
+  nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            margin-top: 15vh;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            transition: all 0.5s ease-in-out;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 25px;
+        }
+
+        div.menu span {
+            display: none;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 920px) {
+            nav ul {
+                position: fixed;
+                top: 132px;
+                left: -165%;
+                height: 70vh;
+                width: 100%;
+                background: gray;
+                color: red;
+                padding-top: 32px;
+                
+            }
+
+            div.menu span {
+                display: block;
+            }
+
+            span:hover {
+                cursor: pointer;
+            }
+
+            nav ul.open {
+                left: -16px;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+                padding: 13px;
+            }
